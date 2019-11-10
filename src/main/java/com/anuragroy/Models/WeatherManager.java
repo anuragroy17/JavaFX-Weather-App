@@ -60,7 +60,7 @@ public class WeatherManager {
 
         //connects and asks the api to sen the json file
         try {
-            json = readJsonFromUrl("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=ADD_YOUR_API_KEY_HERE&lang=eng&units=metric");
+            json = readJsonFromUrl("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid={YOUR_API_KEY}&lang=eng&units=metric");
         } catch (IOException e) {
             return;
         }
